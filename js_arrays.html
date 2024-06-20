@@ -1,0 +1,79 @@
+<html>
+
+  <head>
+    <title>Arrays in Javascript</title>
+  </head>
+
+  <body>
+
+    <p id="demo"></p>
+
+    <p id="anotherDemo"></p>
+
+    <script>
+      //array declaration with elements = collection of elements
+      const cars = ["Fiat", "Volvo", "BMW"];
+      document.write(cars + "<br/>");
+      document.write(cars[2] + "<br/><br/>");
+
+      //declare an empty array, then assign values to it
+      const cars2 = [];
+      cars2[0] = "Saab";
+      cars2[1] = "Volvo";
+      cars2[2] = "Tesla";
+
+      document.write(cars2 + "<br/>");
+      document.write(cars2[2] + "<br/><br/>");
+
+      //Using Array constructor (with new keyword)
+      const cars3 = new Array("Saab", "Volvo", "Tesla");   
+
+      //Acessing elements of an array
+      let volvo = cars3[1];
+      document.write(volvo + "<br/><br/>");
+
+      //Change an array element
+      document.write(cars3[0] + "<br/>");
+      cars3[0] = "Opel";
+      document.write(cars3 + "<br/><br/>");
+
+      //Converting Arrays to Strings
+      document.getElementById("demo").innerHTML = cars3.toString();
+
+      //Access the full Array
+      document.getElementById("anotherDemo").innerHTML = cars3;
+
+      //Arrays are special types of objects, so typeof returns "object"
+      document.write(typeof cars3 + "<br/><br/>");
+
+      //Array elements can be objects
+      myArray = [];
+      myArray[0] = Date.now;
+      myArray[1] = cars3;
+      myArray[2] = cars;
+      document.write(myArray + "<br/><br/>");
+
+      //Arrays have properties
+      document.write(myArray.length + "<br/><br/>");
+
+      //Arrays have methods (functions)
+      const cars4 = new Array("Saab", "Ferrari", "Mazda");
+      document.write(cars4 + "<br/><br/>");
+      document.write(cars4.sort() + "<br/><br/>");
+
+      //Looping Array Elements
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let fLen = fruits.length;
+
+      let text = "<ul>";
+
+      for (let counter = 0; counter < fLen; counter++) {
+        text += "<li>" + fruits[counter] + "</li>";
+      }
+
+      text += "</ul>";
+      document.write(text);
+
+    </script>
+  </body>
+</html>
