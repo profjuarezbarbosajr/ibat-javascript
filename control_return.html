@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>control flow - return</title>
+  </head>
+  <body>
+    <script>
+
+      function getRectArea(width, height) {
+        if (width > 0 && height > 0) {
+          return width * height;
+        }
+        return 0;
+      }
+
+      document.write(getRectArea(3, 4));
+      // Expected output: 12
+      document.write('<br>');
+      document.write(getRectArea(-3, 4));
+      // Expected output: 0
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>for...in loop</title>
+  </head>
+  <body>
+    <script>
+      // key-value pairs - enumerable properties
+      const object = { a: 1, b: 2, c: 3 };
+
+      for (const property in object) {
+        document.write(`${property}: ${object[property]}`);
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
