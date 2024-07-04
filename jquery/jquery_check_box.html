@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detecting a Radio Box Change and getting the Value in jQuery</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript">
+			
+		$(document).ready(function(){
+				
+		$('#my_check_box').change(function(){
+			selected_value = $("input[name='my_options']:checked").val();
+			alert(selected_value);
+			        });
+				
+				});
+			
+	</script>
+	</head>
+	<body>
+		<h2>Detecting a Check Box Change and getting the Value in jQuery:</h2>	
+		<form id="my_check_box">
+		    <input type="checkbox" name="my_options" value="Option 1" /> Option 1
+		    <input type="checkbox" name="my_options" value="Option 2" /> Option 2
+		    <input type="checkbox" name="my_options" value="Option 3" /> Option 3
+		</form>
+	
+	</body>
+</html>

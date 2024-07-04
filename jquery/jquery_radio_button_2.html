@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery - Get selected Radio Button Value</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h2 class="text-white text-center"><strong>Get selected Radio Button Value in JQuery</strong></h2>
+            <form>				
+                <label><strong>Select Your Hobby</strong>:</label><br><br>
+                <label><input type="radio" name="hobby" class="radio-button" value="playing">playing</label>
+                <label><input type="radio" name="hobby" class="radio-button" value="reading">reading</label>
+                <label><input type="radio" name="hobby" class="radio-button" value="singing">singing</label>
+                <label><input type="radio" name="hobby" class="radio-button" value="listening">listening</label>
+                             
+               	<button class="btn btn-success submit-btn" type="submit">Done</button>
+            </form>		
+    </div>
+
+    <script type="text/javascript">
+        $('.submit-btn').click(function () {
+            var value = $('.radio-button:checked').val();
+            alert(value);
+        });
+    </script>
+</body>
+</html>

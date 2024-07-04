@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery - Get Selected Radio Button Value</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='programming_language']:checked").val();
+            if(radioValue){
+                alert("You're a " + radioValue + " programmer");
+            }
+        });
+    });
+</script>
+</head> 
+<body>
+    <h2>Please select a programming language</h2>
+    <p> 
+        <label><input type="radio" name="programming_language" value="Javascript">Javascript</label> 
+        <label><input type="radio" name="programming_language" value="Python">Python</label>
+    </p>
+    <p><input type="button" value="Pick your preferred programming language"></p>
+</body>
+</html>
