@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "openai": "^4.52.6"
+  },
+  "name": "openai-helloworld",
+  "version": "1.0.0",
+  "description": "openai with javascript",
+  "main": "openai-helloworld.js",
+  "type": "module",
+  "scripts": {
+    "start": "node openai-helloworld.js"
+  },
+  "keywords": [],
+  "author": "Juarez",
+  "license": "ISC"
+}
