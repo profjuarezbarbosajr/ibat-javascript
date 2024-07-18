@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "openai": "^4.52.6"
+    "openai": "^4.52.7"
   },
-  "name": "openai-helloworld",
+  "name": "openai-apis",
   "version": "1.0.0",
   "description": "openai with javascript",
-  "main": "openai-helloworld.js",
+  "main": "text-to-speech.js",
   "type": "module",
   "scripts": {
-    "start": "node openai-helloworld.js"
+    "start": "node text-to-speech.js"
   },
   "keywords": [],
   "author": "Juarez",
