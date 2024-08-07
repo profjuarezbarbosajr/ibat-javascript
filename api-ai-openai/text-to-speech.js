@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
 
-const openai = new OpenAI();
+const openai = new OpenAI("demo");
 
 const speechFile = path.resolve("./speech.mp3");
 

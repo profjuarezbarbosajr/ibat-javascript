@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "openai": "^4.52.7"
+    "openai": "^4.53.0"
   },
   "name": "openai-apis",
   "version": "1.0.0",
